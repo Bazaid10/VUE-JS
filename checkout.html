@@ -7,18 +7,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
 </head>
 
-
-
 <body>
     <div id="app">
-        <header>
-            <h1 v-text="sitename"></h1>
-            <button v-on:click='showCheckout' v-on:click="Checkout" v-if='cartItemCount > 0' style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">
-                {{cartItemCount}}
-                <span class="fas fa-cart-plus"></span> Checkout
-            </button>
-        </header>
-
+       
         <main>
             <div v-if='showProduct'>
                 <div v-for="product in sortedProducts">
