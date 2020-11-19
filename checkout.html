@@ -19,7 +19,7 @@
 
         <main>
             <div v-if='showProduct'>
-                <div v-for="product in sortedProducts">
+                <div v-for="product  in sortedProducts">
                     <h2 v-text="product.title"></h2>
                     <figure>
                         <img v-bind:src="product.image">
